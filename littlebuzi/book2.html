@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>腐竹日记- 联机侠篇</title>
+
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.cs s">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- books-css -->
+<link rel="stylesheet" href="css/books/styles.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/books/print.css" type="text/css"  media="print" />
+
+
+    <style>
+
+
+/*阴影效果*/
+.shadow{box-shadow: 0 0 30px #000;}
+.shadow2{box-shadow: 0 0 15px #000;}
+.shadow3{box-shadow: 0 0 5px #000;}
+
+/*菜单*/
+
+#templatemo_menu {
+    clear: both;
+    width: 950px;
+    height: 45px;
+    background: url(images/templatemo_menu_bg.jpg) no-repeat;
+}
+
+#templatemo_menu ul {
+    padding: 13px 0 0 0;
+    margin: 0;
+    list-style: none;
+}
+
+#templatemo_menu ul li{
+    display: inline;
+}
+
+#templatemo_menu ul li a{
+    float: right;
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #969547;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current{
+    color: #fcf88e;
+}
+
+
+/*变浅*/
+#books:hover{opacity:0.75;filter:alpha(opacity=75);}
+#books{background-size: 115% 115%;}
+
+
+</style>
+
+
+<script>
+var tips;
+var theTop = 38; /*这是默认高度,越大越往下*/
+var old = theTop;
+window.onload=function(){
+    initFloatTips();
+}
+
+function initFloatTips() {
+    tips = document.getElementById('right');
+    moveTips();
+};
+function moveTips() {
+    var tt = 46;
+    if (window.innerHeight) {
+        pos = window.pageYOffset
+    } else if (document.documentElement && document.documentElement.scrollTop) {
+        pos = document.documentElement.scrollTop
+    } else if (document.body) {
+        pos = document.body.scrollTop;
+    }
+    pos = pos - tips.offsetTop - 140;
+    pos = tips.offsetTop + pos / 10;
+
+    if (pos < theTop) pos = theTop;
+    if (pos != old) {
+        tips.style.top = pos + "px";
+        tt = 10;
+    }
+    old = pos;
+    setTimeout(moveTips, tt);
+}
+</script>   
+
+
+<!-- minecraft -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function fixHeight() {
+                var headerHeight = $("#switcher").height();
+                $("#iframe").attr("height", $(window).height()-54+ "px");
+            }
+            $(window).resize(function () {
+                fixHeight();
+            }).resize();
+
+            $('.icon-monitor').addClass('active');
+
+            $(".icon-mobile-3").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width-3');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-mobile-2").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width-2');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-mobile-1").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width');
+                $('.icon-tablet,.icon-mobile,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-tablet").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('tablet-width');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-monitor").click(function () {
+                $("#by").css("overflow-y", "hidden");
+                $('#iframe-wrap').removeClass().addClass('full-width');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        function Responsive($a) {
+            if ($a == true) $("#Device").css("opacity", "100");
+            if ($a == false) $("#Device").css("opacity", "0");
+            $('#iframe-wrap').removeClass().addClass('full-width');
+            $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        };
+    </script>
+
+
+</head>
+<body style="background-image:url(./images/bg.jpg); background-repeat:no-repeat;background-size:100% 100%; background-attachment:fixed;">
+
+
+<div style="width: 1000px;height: 1900px;margin: 0 auto">
+
+<div class="shadow2" style="background-image: url(images/templatemo_menu_bg.jpg);width:950px;height:50px;margin-right:15px;margin-left: 10px">
+
+
+<div id="templatemo_menu">
+        <ul>
+           <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/logo3.png"></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="http://music.163.com/#/playlist?id=428788795">网易歌单</a></li>
+                <li><a href="books.html" class="current">藏书阁</a></li>            
+                <li><a href="subscribe.html">订阅</a></li>  
+                <li><a href="minecraft.html">田园生活</a></li> 
+                <li><a href="index.html">首页</a></li>
+        </ul>
+    </div> 
+    
+
+
+</div>
+
+
+<div id="bookroom" class="shadow2" style="width:942px;height:1850px;margin-left: 16px">
+
+
+<div id="wrapper" style="width:942px;height:1850px"><!-- #wrapper -->
+
+    <header><!-- header -->        
+     <h1><a href="book.html">《腐竹日记-MC》- 清新小镇</a></h1>       
+
+
+<div style="width: 940px;height: 380px">
+
+<div id="iframe-wrap">
+<!-- id="iframe" -->
+    <iframe src="minecraft/bookimg.html" frameborder="0" width="100%" height="350" ></iframe><!-- http://www.17sucai.com/preview/67633/2017-08-29/轮播/index.html -->
+</div>
+</div>
+
+
+</header><!-- end of header -->
+
+
+
+    <section id="main"><!-- #main content and sidebar area -->
+        <section id="container"><!-- #container -->
+            <section id="content"><!-- #content -->
+            <div id="go" style="width:615px; height:1100px; overflow:auto; border:0px solid #000000;">
+            <article >
+            <h2><a href="#"><h3>第一章</h3>
+新手上路-"我的小镇"
+            </a></h2> 
+                            <img src="images/windrose.png" alt="" class="alignleft" /><strong>
+                            <br>
+17.9.3
+<br><br>
+【初次开服】(有了一点开服经验，开始尝试假设一个中小型的服务器)
+搞服务器也有一段时间了，在刚开始的服中（中国版公测前）买了个18+5的服，性能一般。之后的买的30块的服，明显好很多。在完成一些基础设置之后，开了个“清新小镇”。然而开服不长，遇到了插件权限的问题，无法分配权限给玩家。弄了一段时间后，发现原来是没有groupmanager的插件，或者没有essgroupmanager基础插件，最后玩家无法使用插件指令，最大的问题是无法设置vip给予权限，在尝试添加grouomanager后出现各种原插件权限紊乱，领地消失，在添加其它权限插件，例如permisson ex ，playervip，服务器都没什么反应，无法使用此类插件。
+<br>
+【计划】<br>
+现阶段了解了水桶服的大概后，打算开个有特色的mod服，吸取上次经验，在公开服务器之前，先用本机经过大量测试，避免发生先前的重大事故，无法分配vip，进而盈利。
+<br><br>
+17.9.26<br><br> 
+
+<!-- 【网易】<br>
+由于在开第一次服的时候出现致命性错误，导致后果非常失败。自从接触网易我的世界后，发现与期待中的中国版还是有挺多差别的。说一下感兴趣的地方，启动版本方面，类试于启动侠，可选版本启动，不过只有5至6个突出版本可选，没启动侠这样做的这么详细，对于大多数玩家来说这是做的挺不错的。然后就是hypixel，插件厉害的真的没话说。接着不能少的是好友功能，虽然功能不多，但可以增加玩家间的互联，不过这还做的不够。hpyixel在这方面做的不错。接下来就是感觉不舒服的地方了，一，服务器，服务器方面是我最最期待的，也是万千私服腐竹关心的话题，上线时还抱着挺大的期望，可惜上线后发现，功能少的可怜，腐竹自由度很少，出生地保护，模式，怪物，还有一些小设置，并且不能上传地图；组件mod不用说了；当然这并不是技术上的问题，希望网易以后能呈现多点给玩家。不要太商业。 -->
+
+
+</strong> 
+                        </article>
+                        
+                <article>
+                            <h2><a href="#">持续更新中...</a></h2>
+                            <p>持续更新中...</p>
+                        </article>
+                        
+            </section><!-- end of #content -->
+        </section><!-- end of #container -->
+
+        <aside id="sidebar"><!-- sidebar -->
+       &nbsp&nbsp&nbsp
+<a href="#go"><button>点我点我 跳转 最佳阅读位置</button></a><br>
+<div style="margin-left: 100px">↓↓↓</div><br>
+
+            <ul><a href="#go"><img src="images/666.gif" width="220" height="200"></a></ul>
+
+
+
+                <h3>想浏览更多的文章？</h3>
+                    <ul>
+                        <li><a href="https://emadons.github.io/">Emadons的博客</a></li>
+                        <li><a href="http://www.brightlam.top/">Light的博客</a></li>                     
+                    </ul>
+
+
+
+                <h3>想知道作者联系方式？</h3>
+                    <ul>
+                        <li><a href="subscribe.html">微信：Buzi的后花园</a></li>
+                        <li><a href="subscribe.html">QQ：细路仔</a></li>
+                        <li><a href="subscribe.html">工作室电话</a></li>
+                        <li><a href="subscribe.html">工作室邮箱</a></li>
+                        <li><a href="subscribe.html">微博：吴仔</a></li>
+                        <li><a href="subscribe.html">Facebook</a></li>
+                    </ul>
+                    
+               
+                    
+                <h3>作者的藏书阁</h3>
+                    <ul>
+                        <li><a href="#">藏书阁</a></li>
+                        <li><a href="#">book1</a></li>
+                        <li><a href="#">book2</a></li>
+                        <li><a href="#">book3</a></li>
+                        <li><a href="#">book4</a></li>
+                        <li><a href="#">book5</a></li>
+                        <li><a href="#">book6</a></li>
+                    </ul>
+
+                <h3>关于Buzi工作室</h3>
+                    <ul>
+                        <li><a href="#">了解我们</a></li>
+                        <li><a href="#">我的计划</a></li>
+                    </ul>                           
+<br>
+
+
+
+    <div style="width: 220px;height: 220px;margin:2px;background-image:url(./images/liuyan2.png);background-size: 100% auto; background-repeat: no-repeat" class="shadow2">
+<center><br><h3>扩展阅读：</h3>
+<a href="http://www.lianjixia.com/"><h4>“联机侠”是神马？</h4></a></center>
+    </div>
+                    
+
+
+        </aside><!-- end of sidebar -->
+
+    </section><!-- end of #main content and sidebar-->
+
+    <footer style="margin-top: 0px">
+            <img src="images/line.png" width="800" height="3">
+                <div style="margin-left: 100px;float:left;list-style-type: none">
+                <h3 style="margin-left: 150px"><a href="minecraft.html">点击返回最上方</a></h3>
+                                <ul style="float:left;list-style-type: none;margin-left: 150px;margin-top: 25px">
+                                    <li style="float:left"><a href="index.html">返回首页</a></li>
+                                    <li style="float:left;margin-left: 50px"><a href="subscribe.html">订阅</a></li>
+                                    <li style="float:left;margin-left: 50px"><a href="books.html">藏书阁</a></li>
+                                    <li style="float:left;margin-left: 50px"><a href="http://music.163.com/#/playlist?id=428788795">歌单</a></li>
+                                    <li style="float:left;margin-left: 50px"><a href="about.html">关于</a></li>
+                                </ul> 
+                            
+                    </div> 
+
+    </footer>
+
+</div><!-- #wrapper -->
+<!-- Free template created by http://freehtml5templates.com -->
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+</div> 
+    
+</body>
+</html>

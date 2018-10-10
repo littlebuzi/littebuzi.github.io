@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订阅</title>
+
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- 1 -->
+<link rel="stylesheet" href="css/subscribe/bootstrap.min.css">
+<link rel="stylesheet" href="css/subscribe/flexslider.css">
+<link rel="stylesheet" href="css/subscribe/jquery.fancybox.css">
+<link rel="stylesheet" href="css/subscribe/main.css">
+<link rel="stylesheet" href="css/subscribe/responsive.css">
+<link rel="stylesheet" href="css/subscribe/animate.min.css">
+<link rel="stylesheet" href="css/subscribe/font-icon.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<script src="js/subscribe/jquery.min.js"></script> 
+<script src="js/subscribe/bootstrap.min.js"></script> 
+<script src="js/subscribe/jquery.flexslider-min.js"></script> 
+<script src="js/subscribe/jquery.fancybox.pack.js"></script> 
+<script src="js/subscribe/jquery.waypoints.min.js"></script> 
+<script src="js/subscribe/retina.min.js"></script> 
+<script src="js/subscribe/modernizr.js"></script> 
+<script src="js/subscribe/main.js"></script>
+
+
+<style>
+
+
+/*阴影效果*/
+.shadow{box-shadow: 0 0 30px #000;}
+.shadow2{box-shadow: 0 0 15px #000;}
+.shadow3{box-shadow: 0 0 5px #000;}
+
+/*菜单*/
+
+#templatemo_menu {
+	clear: both;
+	width: 950px;
+	height: 45px;
+	background: url(images/templatemo_menu_bg.jpg) no-repeat;
+}
+
+#templatemo_menu ul {
+	padding: 13px 0 0 0;
+	margin: 0;
+	list-style: none;
+}
+
+#templatemo_menu ul li{
+	display: inline;
+}
+
+#templatemo_menu ul li a{
+	float: right;
+	padding: 0 20px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: #969547;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current{
+	color: #fcf88e;
+}
+
+
+/*变浅*/
+#books:hover{opacity:0.75;filter:alpha(opacity=75);}
+#books{background-size: 115% 115%;}
+
+
+
+
+</style>
+
+
+<script>
+var tips;
+var theTop = 38; /*这是默认高度,越大越往下*/
+var old = theTop;
+window.onload=function(){
+	initFloatTips();
+}
+
+function initFloatTips() {
+    tips = document.getElementById('right');
+    moveTips();
+};
+function moveTips() {
+    var tt = 46;
+    if (window.innerHeight) {
+        pos = window.pageYOffset
+    } else if (document.documentElement && document.documentElement.scrollTop) {
+        pos = document.documentElement.scrollTop
+    } else if (document.body) {
+        pos = document.body.scrollTop;
+    }
+    pos = pos - tips.offsetTop - 140;
+    pos = tips.offsetTop + pos / 10;
+
+    if (pos < theTop) pos = theTop;
+    if (pos != old) {
+        tips.style.top = pos + "px";
+        tt = 10;
+    }
+    old = pos;
+    setTimeout(moveTips, tt);
+}
+</script>	
+
+
+</head>
+<body style="background-image:url(./images/bg.jpg); background-repeat:no-repeat;background-size:100% 100%; background-attachment:fixed;">
+
+
+<div style="width: 1000px;height: 2000px;margin: 0 auto">
+
+<div class="shadow2" style="background-image: url(images/templatemo_menu_bg.jpg);width:950px;height:50px;margin-right:15px;margin-left: 15px">
+
+
+<div id="templatemo_menu">
+    	<ul>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/logo3.png"></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="http://music.163.com/#/playlist?id=428788795">网易歌单</a></li>
+                <li><a href="books.html">藏书阁</a></li>            
+                <li><a href="subscribe.html" class="current">订阅</a></li>  
+                <li><a href="minecraft.html">田园生活</a></li> 
+                <li><a href="index.html">首页</a></li>
+                
+    	</ul>
+    </div> 
+    
+
+
+</div>
+
+
+<!-- <div id="right" class="shadow2" style="width:250px;height:645px;margin: 15px;float:left;background-image: url(./images/head.jpg);position:absolute;top:353px;left:100;">
+</div>
+ -->
+
+<div id="bookroom" class="shadow2" style="width:945px;height:590px;margin-top:3px;margin-left: 20px;background-image: url(./images/head.jpg);">
+
+<!-- Text banner section --> 
+<!-- portfolio section -->
+<section id="works" class="works section no-padding">
+  <div class="container-fluid">
+    <div class="row no-gutter">
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-1-1.jpg" class="work-box"> <img src="images/work-1.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Project Name</h5>
+            <p><i class="fa fa-search-plus fa-2x"></i></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-2-2.jpg" class="work-box"> <img src="images/work-2.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Project Name</h5>
+            <p><i class="fa fa-search-plus fa-2x"></i></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-3-3.jpg" class="work-box"> <img src="images/work-3.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Project Name</h5>
+            <p><i class="fa fa-search-plus fa-2x"></i></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-4-4.png" class="work-box"> <img src="images/work-4.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Project Name</h5>
+            <p><i class="fa fa-search-plus fa-2x"></i></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-5.jpg" class="work-box"> <img src="images/work-5.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Project Name</h5>
+            <p><i class="fa fa-search-plus fa-2x"></i></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-6-6.jpg" class="work-box"> <img src="images/work-6.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Project Name</h5>
+            <p><i class="fa fa-search-plus fa-2x"></i></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-7.jpg" class="work-box"> <img src="images/work-7.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Project Name</h5>
+            <p><i class="fa fa-search-plus fa-2x"></i></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-8.jpg" class="work-box"> <img src="images/work-8.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Project Name</h5>
+            <p><i class="fa fa-search-plus fa-2x"></i></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+
+
+
+         <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-9.jpg" class="work-box"> <img src="images/work-9.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Project Name</h5>
+            <p><i class="fa fa-search-plus fa-2x"></i></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-10.jpg" class="work-box"> <img src="images/work-10.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Project Name</h5>
+            <p><i class="fa fa-search-plus fa-2x"></i></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-11.jpg" class="work-box"> <img src="images/work-11.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Project Name</h5>
+            <p><i class="fa fa-search-plus fa-2x"></i></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/work-12.jpg" class="work-box"> <img src="images/work-12.jpg" alt="">
+        <div class="overlay">
+          <div class="overlay-caption">
+            <h5>Project Name</h5>
+            <p><i class="fa fa-search-plus fa-2x"></i></p>
+          </div>
+        </div>
+        <!-- overlay --> 
+        </a> </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 
+<div style="width:940px;height:200px;margin-top:3px;margin-left: 20px">
+<img src="images/build.png" width="700" height="220" class="shadow2" style="margin-top: 10px;margin-left: 120px">
+ </div>-->
+
+<center><h6> &nbsp;<br>Buzi工作室版权所有©1998-2018&nbsp;&nbsp;Buzi工作室运营：工作室[2018] &nbsp;666号 &nbsp;&nbsp;&nbsp;
+
+违法和不良信息举报电话：17765602705 &nbsp;&nbsp;&nbsp; 举报邮箱：501596098@qq.com</h6>
+
+</center>
+
+
+
+</div>
+
+
+
+</div>
+
+	
+</body>
+</html>

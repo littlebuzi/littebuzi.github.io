@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>《更新中，敬请期待》</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.cs s">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- books-css -->
+<link rel="stylesheet" href="css/books/styles.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/books/print.css" type="text/css"  media="print" />
+
+
+    <style>
+
+
+/*阴影效果*/
+.shadow{box-shadow: 0 0 30px #000;}
+.shadow2{box-shadow: 0 0 15px #000;}
+.shadow3{box-shadow: 0 0 5px #000;}
+
+/*菜单*/
+
+#templatemo_menu {
+    clear: both;
+    width: 950px;
+    height: 45px;
+    background: url(images/templatemo_menu_bg.jpg) no-repeat;
+}
+
+#templatemo_menu ul {
+    padding: 13px 0 0 0;
+    margin: 0;
+    list-style: none;
+}
+
+#templatemo_menu ul li{
+    display: inline;
+}
+
+#templatemo_menu ul li a{
+    float: right;
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #969547;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current{
+    color: #fcf88e;
+}
+
+
+/*变浅*/
+#books:hover{opacity:0.75;filter:alpha(opacity=75);}
+#books{background-size: 115% 115%;}
+
+
+</style>
+
+
+<script>
+var tips;
+var theTop = 38; /*这是默认高度,越大越往下*/
+var old = theTop;
+window.onload=function(){
+    initFloatTips();
+}
+
+function initFloatTips() {
+    tips = document.getElementById('right');
+    moveTips();
+};
+function moveTips() {
+    var tt = 46;
+    if (window.innerHeight) {
+        pos = window.pageYOffset
+    } else if (document.documentElement && document.documentElement.scrollTop) {
+        pos = document.documentElement.scrollTop
+    } else if (document.body) {
+        pos = document.body.scrollTop;
+    }
+    pos = pos - tips.offsetTop - 140;
+    pos = tips.offsetTop + pos / 10;
+
+    if (pos < theTop) pos = theTop;
+    if (pos != old) {
+        tips.style.top = pos + "px";
+        tt = 10;
+    }
+    old = pos;
+    setTimeout(moveTips, tt);
+}
+</script>   
+
+
+<!-- minecraft -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            function fixHeight() {
+                var headerHeight = $("#switcher").height();
+                $("#iframe").attr("height", $(window).height()-54+ "px");
+            }
+            $(window).resize(function () {
+                fixHeight();
+            }).resize();
+
+            $('.icon-monitor').addClass('active');
+
+            $(".icon-mobile-3").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width-3');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-mobile-2").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width-2');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-mobile-1").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('mobile-width');
+                $('.icon-tablet,.icon-mobile,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-tablet").click(function () {
+                $("#by").css("overflow-y", "auto");
+                $('#iframe-wrap').removeClass().addClass('tablet-width');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+
+            $(".icon-monitor").click(function () {
+                $("#by").css("overflow-y", "hidden");
+                $('#iframe-wrap').removeClass().addClass('full-width');
+                $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+                $(this).addClass('active');
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        function Responsive($a) {
+            if ($a == true) $("#Device").css("opacity", "100");
+            if ($a == false) $("#Device").css("opacity", "0");
+            $('#iframe-wrap').removeClass().addClass('full-width');
+            $('.icon-tablet,.icon-mobile-1,.icon-monitor,.icon-mobile-2,.icon-mobile-3').removeClass('active');
+            $(this).addClass('active');
+            return false;
+        };
+    </script>
+
+
+</head>
+<body style="background-image:url(./images/bg.jpg); background-repeat:no-repeat;background-size:100% 100%; background-attachment:fixed;">
+
+
+<div style="width: 1000px;height: 1900px;margin: 0 auto">
+
+<div class="shadow2" style="background-image: url(images/templatemo_menu_bg.jpg);width:950px;height:50px;margin-right:15px;margin-left: 10px">
+
+
+<div id="templatemo_menu">
+        <ul>
+           <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/logo3.png"></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="http://music.163.com/#/playlist?id=428788795">网易歌单</a></li>
+                <li><a href="books.html" class="current">藏书阁</a></li>            
+                <li><a href="subscribe.html">订阅</a></li>  
+                <li><a href="minecraft.html">田园生活</a></li> 
+                <li><a href="index.html">首页</a></li>
+        </ul>
+    </div> 
+    
+
+
+</div>
+
+
+<div id="bookroom" class="shadow2" style="width:942px;height:1850px;margin-left: 16px">
+
+
+<div id="wrapper" style="width:942px;height:1850px"><!-- #wrapper -->
+
+    <header><!-- header -->        
+     <h1><a href="bookupdate.html">《更新中，敬请期待》</a></h1>       
+
+
+<div style="width: 940px;height: 380px">
+
+<div id="iframe-wrap">
+<!-- id="iframe" -->
+    <iframe src="minecraft/bookimg.html" frameborder="0" width="100%" height="350" ></iframe><!-- http://www.17sucai.com/preview/67633/2017-08-29/轮播/index.html -->
+</div>
+</div>
+
+
+</header><!-- end of header -->
+
+
+
+    <section id="main"><!-- #main content and sidebar area -->
+        <section id="container"><!-- #container -->
+            <section id="content"><!-- #content -->
+            <div id="go" style="width:615px; height:1100px; overflow:auto; border:0px solid #000000;">
+            <article >
+          <h2><a href="#"><h3>第一章</h3>持续更新中...</a></h2> 
+                            <img src="images/windrose.png" alt="" class="alignleft" /><p><strong>持续更新中...</strong></p> 
+                        </article>
+                        
+                <!-- <article>
+                            <h2><a href="#">持续更新中...</a></h2>
+                            <p>持续更新中...</p>
+                        </article>
+                        
+                <article>
+                            <h2><a href="#">持续更新中...</a></h2>
+                            <p>持续更新中...</p>
+                        </article> -->
+                        
+            </section><!-- end of #content -->
+        </section><!-- end of #container -->
+
+        <aside id="sidebar"><!-- sidebar -->
+       &nbsp&nbsp&nbsp
+<a href="#go"><button>点我点我 跳转 最佳阅读位置</button></a><br>
+<div style="margin-left: 100px">↓↓↓</div><br>
+
+            <ul><a href="#go"><img src="images/666.gif" width="220" height="200"></a></ul>
+
+
+
+                <h3>想浏览更多的文章？</h3>
+                    <ul>
+                        <li><a href="https://emadons.github.io/">Emadons的博客</a></li>
+                        <li><a href="http://www.brightlam.top/">Light的博客</a></li>                     
+                    </ul>
+
+
+
+                <h3>想知道作者联系方式？</h3>
+                    <ul>
+                        <li><a href="subscribe.html">微信：Buzi的后花园</a></li>
+                        <li><a href="subscribe.html">QQ：细路仔</a></li>
+                        <li><a href="subscribe.html">工作室电话</a></li>
+                        <li><a href="subscribe.html">工作室邮箱</a></li>
+                        <li><a href="subscribe.html">微博：吴仔</a></li>
+                        <li><a href="subscribe.html">Facebook</a></li>
+                    </ul>
+                    
+               
+                    
+                <h3>作者的藏书阁</h3>
+                    <ul>
+                        <li><a href="#">藏书阁</a></li>
+                        <li><a href="#">book1</a></li>
+                        <li><a href="#">book2</a></li>
+                        <li><a href="#">book3</a></li>
+                        <li><a href="#">book4</a></li>
+                        <li><a href="#">book5</a></li>
+                        <li><a href="#">book6</a></li>
+                    </ul>
+
+                <h3>关于Buzi工作室</h3>
+                    <ul>
+                        <li><a href="#">了解我们</a></li>
+                        <li><a href="#">我的计划</a></li>
+                    </ul>                           
+<br>
+
+
+
+    <div style="width: 220px;height: 220px;margin:2px;background-image:url(./images/liuyan2.png);background-size: 100% auto; background-repeat: no-repeat" class="shadow2">
+<center><br><h3>扩展阅读：</h3>
+<a href="http://www.lianjixia.com/"><h4>“联机侠”是神马？</h4></a></center>
+    </div>
+                    
+
+
+        </aside><!-- end of sidebar -->
+
+    </section><!-- end of #main content and sidebar-->
+
+    <footer style="margin-top: 0px">
+            <img src="images/line.png" width="800" height="3">
+                <div style="margin-left: 100px;float:left;list-style-type: none">
+                <h3 style="margin-left: 150px"><a href="minecraft.html">点击返回最上方</a></h3>
+                                <ul style="float:left;list-style-type: none;margin-left: 150px;margin-top: 25px">
+                                    <li style="float:left"><a href="index.html">返回首页</a></li>
+                                    <li style="float:left;margin-left: 50px"><a href="subscribe.html">订阅</a></li>
+                                    <li style="float:left;margin-left: 50px"><a href="books.html">藏书阁</a></li>
+                                    <li style="float:left;margin-left: 50px"><a href="http://music.163.com/#/playlist?id=428788795">歌单</a></li>
+                                    <li style="float:left;margin-left: 50px"><a href="about.html">关于</a></li>
+                                </ul> 
+                            
+                    </div> 
+
+    </footer>
+
+</div><!-- #wrapper -->
+<!-- Free template created by http://freehtml5templates.com -->
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+</div> 
+    
+</body>
+</html>

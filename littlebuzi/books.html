@@ -1,0 +1,239 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta name = "viewport" content = "width=device-width, initial-scale=1.0, maximum-scale=1.0"> 
+<title>藏书阁</title> 
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
+ 
+<style> 
+body { margin:0; }
+
+/*阴影效果*/
+.shadow{box-shadow: 0 0 30px #000;}
+.shadow2{box-shadow: 0 0 15px #000;}
+.shadow3{box-shadow: 0 0 5px #000;}
+.shadow4{box-shadow: 0 0 20px #000;}
+
+#books:hover{opacity:0.75;filter:alpha(opacity=75);background-color: white}
+#books{background-size: 115% 115%;background-color: white}
+
+/*菜单*/
+
+#templatemo_menu {
+    clear: both;
+    width: 950px;
+    height: 45px;
+    background: url(images/templatemo_menu_bg.jpg) no-repeat;
+}
+
+#templatemo_menu ul {
+    padding: 13px 0 0 0;
+    margin: 0;
+    list-style: none;
+}
+
+#templatemo_menu ul li{
+    display: inline;
+}
+
+#templatemo_menu ul li a{
+    float: right;
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #969547;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current{
+    color: #fcf88e;
+}
+
+
+/*变浅*/
+#books:hover{opacity:0.75;filter:alpha(opacity=75)}
+#books{background-size: 115% 115%}
+
+/*books*/
+ul{
+
+    list-style:none;
+}
+.stage{
+
+    position:relative;
+    margin:100px;
+}
+.desk{
+
+    background:#eae1dc;
+    width:750px;
+    height:30px;
+    position:absolute;
+    bottom:-35px;
+    border-bottom:2px solid #f5ebe9;
+    z-index:-1;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.desk:after{
+    content: "";
+    background: #F2EDEA;
+    width: 861px;
+    position: absolute;
+    margin-left: -20px;
+    height: 65px;
+    -webkit-transform: perspective(300px) rotateX(50deg) translateX(-42px) translateY(-90px);
+    transform: perspective(300px) rotateX(50deg) translateX(-42px) translateY(-90px);
+}
+.desk-shadow{
+    position: absolute;
+    bottom: -100px;
+    z-index: -2;
+    background: none;
+    width: 760px;
+    height: 65px;
+    box-shadow: 0 56px 63px rgba(0,0,0,0.3);
+    -webkit-transform: perspective(300px) rotateX(33deg) translateX(3px) translateY(-90px);
+    transform: perspective(300px) rotateX(33deg) translateX(3px) translateY(-90px);
+}
+.books-list li{
+   
+    position:relative;
+    display:inline-block;
+    margin-left:12px;
+    margin-bottom: 7px;
+    width:210px;
+    height:284px;
+    z-index:2;
+    overflow-y:hidden;
+    overflow-x:visible;
+
+}
+.books-list li img{
+    width:210px;
+    height:284px;
+}
+.books-list li:after{
+    content: "";
+    position: absolute;
+    overflow: hidden;
+    right: 28px;
+    bottom: 0px;
+    width: 25px;
+    height: 129px;
+    background: rgba(0,0,0,0.4);
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    -webkit-transform: perspective(300px) rotateX(29deg) rotateY(-61deg) rotateZ(-11deg) translateX(8px) translateY(8px);
+    transform: perspective(300px) rotateX(29deg) rotateY(-61deg) rotateZ(-11deg) translateX(8px) translateY(8px);
+    z-index: -1;
+}
+    
+</style> 
+
+<script> 
+jQuery(document).ready(function() {
+ 
+    $.versatileTouchSlider('#ex_shelf_full', {
+            slideWidth: 960, // some number. ex: 960 or '100%'
+            slideHeight: 'auto', // some number. ex: 220 or 'auto'
+            showPreviousNext: true,
+            currentSlide: 0,
+            scrollSpeed: 600,
+            autoSlide: false,
+            autoSlideDelay: 3000,
+            showPlayPause: true,
+            showPagination: true,
+            alignPagination: 'left',
+            alignMenu: 'left',
+            swipeDrag: true,
+            sliderType: 'image_shelf', // image_shelf, image_banner, image_text, image_gallery
+            pageStyle: 'numbers', // numbers, bullets, thumbnails
+            orientation: 'horizontal', // horizontal, vertical (if vertical, the "slideHeight" option must be a number, not 'auto')
+            onScrollEvent: function() {},
+            ajaxEvent: function() {}
+        }
+    );
+    
+});
+</script> 
+ 
+</head> 
+    
+<body style="background-image:url(./images/bg.jpg); background-repeat:no-repeat;background-size:100% 100%; background-attachment:fixed;">
+
+
+<div style="width: 1000px;height: 2000px;margin: 0 auto">
+
+    <div class="shadow2" style="background-image: url(images/templatemo_menu_bg.jpg);width:950px;height:45px;margin-right:15px;margin-left: 15px">
+
+        <div id="templatemo_menu">
+        <ul>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/logo3.png"></li>
+                <li><a href="about.html">关于</a></li>
+                <li><a href="http://music.163.com/#/playlist?id=428788795">网易歌单</a></li>
+                <li><a href="books.html" class="current">藏书阁</a></li>            
+                <li><a href="subscribe.html">订阅</a></li>  
+                <li><a href="minecraft.html">田园生活</a></li> 
+                <li><a href="index.html">首页</a></li>            
+        </ul>
+        </div> 
+
+    </div> 
+
+<div id="bookroom" style="width:960px;height:1000px;margin-top:-90px;margin-left: 10px">
+
+<div class="stage" style="margin-top:160px">
+        <ul class="books-list">
+            <li class="shadow4"><div style="background-color: white"><a href="book1.html" id="books"><img src="images/b1.jpg"></a></div></li>
+             <li class="shadow4"><div style="background-color: white"><a href="book2.html" id="books"><img src="images/b3.jpg"></a></div></li>
+              <li class="shadow4"><div style="background-color: white"><a href="friends/index.html" id="books"><img src="images/b2.jpg"></a></div></li>             
+        </ul>
+        <div class="desk"></div>
+        <div class="desk-shadow"></div>
+    </div>
+
+    <div class="stage">
+        <ul class="books-list">
+            <li class="shadow4"><div style="background-color: white"><a href="minecraft.html" id="books"><img src="images/b4.jpg"></a></div></li>
+             <li class="shadow4"><div style="background-color: white"><a href="book5.html" id="books"><img src="images/b5.jpg"></a></div></li>
+              <li class="shadow4"><div style="background-color: white"><a href="book6.html" id="books"><img src="images/b6.jpg"></a></div></li>             
+        </ul>
+        <div class="desk"></div>
+        <div class="desk-shadow"></div>
+    </div>
+
+<div class="stage">
+        <ul class="books-list">
+            <li class="shadow4"><div style="background-color: white"><a href="book7.html" id="books"><img src="images/b7.jpg"></a></div></li>
+             <li class="shadow4"><div style="background-color: white"><a href="book8.html" id="books"><img src="images/b8.jpg"></a></div></li>
+              <li class="shadow4"><div style="background-color: white"><a href="book9.html" id="books"><img src="images/b9.jpg"></a></div></li>             
+        </ul>
+        <div class="desk"></div>
+        <div class="desk-shadow"></div>
+    </div>
+
+</div>
+
+
+</div>
+
+
+</body> 
+</html>
