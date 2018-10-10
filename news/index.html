@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>page1</title>
+	<link rel="stylesheet" href="css/index.css">
+
+<script src="js/content2-right1.js"></script>
+<script src="js/header.js"></script>
+
+
+</head>
+<body bgcolor="#DAE3E7">
+<!-- head -->
+	<div id="header">
+		<div id="logo">
+			<div id="logoimg">
+				<img src="images/logo1.png" class="logo1">
+			</div>
+			<div id="name">	
+				<h3 class="buzi-font">大佬</h3>
+				<h5 class="baobao-font">帅得一塌糊涂</h5> 
+			</div>
+			<div id="up-line"><hr class="hr1"></hr>
+			</div>
+				<img src="images/weixin1.png" id="img1" onMouseOver="mo1()" onMouseOut="mout1()">
+		
+		</div>
+	<div id="header-line" style="margin-top: 2px">
+	</div>
+
+<!-- body -->
+	<div id="body">
+		<div id="content1">
+		<h1 style="margin:50px;line-height: 15px">Minecraft 简史</h1>
+		<h6 style="margin:50px;line-height: 25px;color:#999999">作者 :  buzi &nbsp |&nbsp&nbsp&nbsp&nbsp发布：2017-10-12 11:54:02&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp更新：2017-10-12 15:05:41 &nbsp&nbsp&&nbsp阅读: 666+ &nbsp&nbsp&nbsp&nbsp赞: 666+ </h6>
+		
+	<hr class="hr2">
+
+
+
+
+
+
+	<p style="margin:60px;line-height: 25px">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容
+
+</p>
+		</div>
+
+		<div id="content2" >
+
+			<div id="right1" class="box" class="box1">
+
+			<!-- 1 -->
+
+				<div id="right2" class="box2">
+
+			<!-- 2 -->
+
+
+
+
+				</div>
+			</div>
+			
+		</div>
+
+
+
+	</div>
+
+
+
+</div>
+
+
+
+
+</body>
+<script type="text/javascript">
+
+var oTop = $(".box").offset().top;
+var sTop = 0;
+$(window).scroll(function(){
+sTop = $(this).scrollTop();
+
+if(sTop >= oTop){
+$(".box").css({"position":"fixed","top":"0"});
+}else{
+$(".box").css({"position":"static"});
+}
+});
+</script>
+
+</html>
